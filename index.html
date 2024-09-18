@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html data-bs-theme="light" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>MSPA</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md bg-body" data-bs-theme="dark">
+        <div class="container-fluid"><a class="navbar-brand" href="#">MS-PA</a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#">Text To Announce</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Pre-made Sounds</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Settings</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div>
+        <section class="py-4 py-xl-5">
+            <div class="container">
+                <div class="text-center p-4 p-lg-5">
+                    <p class="fw-bold text-primary mb-2">Text to Announce</p>
+                    <div style="margin: 10px;"><textarea id="TTS" class="form-control" rows="3"></textarea></div>
+                    <div><button class="btn btn-primary fs-5 me-2 py-2 px-4" type="button" style="width: 178px;height: 48px;">Send Message</button>
+                        <div class="dropdown show"><button class="btn btn-secondary dropdown-toggle me-2 py-2 px-4" aria-expanded="false" data-bs-toggle="dropdown" type="button" style="width: 178px;height: 48px;margin-top: 10px;">Speaker Group</button>
+                            <div class="dropdown-menu"><a class="dropdown-item" href="">All</a><a class="dropdown-item" href="">Microscreen</a><a class="dropdown-item" href="#">Syscon</a><a class="dropdown-item" href="#">MS Stretch</a><a class="dropdown-item" href="#">MS Yellow</a><a class="dropdown-item" href="#">MS Stencil</a><a class="dropdown-item" href="#">Front Office</a><a class="dropdown-item" href="#">SYS Sensors</a><a class="dropdown-item" href="#">SYS Plantstar</a></div>
+                        </div>
+                    </div>
+                    <p id="currentgroup" class="fw-bold text-secondary mb-2" style="margin: 10px;">No current selected group</p>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/TTAPage.js"></script>
+</body>
+
+</html>
