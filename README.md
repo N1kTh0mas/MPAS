@@ -36,7 +36,6 @@
 
 ## Things To Do
 
-- Add the ability to play audio files in place of TTS for alarm sounds, etc.
 - Connect HTML JavaScript variables to the server
 - Create a server to communicate with `SoundHandler.py` and pass arguments
 - Create a client-server to run `SoundHandler.py` on Raspberry Pis and pass arguments
