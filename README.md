@@ -44,6 +44,7 @@ Made by Nik Thomas 9/17/2024
 - Test Flask Client Side Server
 - Add Mode 2 and Mode 3 Page on website
 - Add Settings / Testing Page to Site
+- Organize Repo Better with seperation between Client and Server
 
 
 ## Required Libs
