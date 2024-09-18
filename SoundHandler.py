@@ -6,8 +6,12 @@ from googletrans import Translator
 import ast
 
 SPEAKER_ID = 100
+if len(sys.argv) < 4:
+    print("Argument 3 is missing. Exiting the script.")
+    sys.exit(1) 
 
 arg_as_list = ast.literal_eval(sys.argv[3])
+
 
 if SPEAKER_ID in arg_as_list:
 
@@ -18,6 +22,10 @@ if SPEAKER_ID in arg_as_list:
         sound = pygame.mixer.Sound(file)
         sound.play()
         pygame.time.wait(int(sound.get_length() * 1000))
+
+    TEXT = "Error No Text Provided"
+
+    SPEAK_BOTH = 0
 
     VOICES = [ 'es-MX-DaliaNeural', 'en-CA-LiamNeural']
     TEXT = sys.argv[1]
@@ -47,4 +55,5 @@ if SPEAKER_ID in arg_as_list:
         playSound(OUTPUT_FILE_ES)
 
 
-
+else:
+    print('ERROR with SPEAKER ID')
