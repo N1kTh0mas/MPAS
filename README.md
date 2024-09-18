@@ -1,9 +1,13 @@
 # MPAS - Microscreen Public Address System
 
+Made by Nik Thomas 9/17/2024
 © Nik Thomas 2024
 
 ## Completed Items
 
+- **Flask server on raspberry pis to listen for REST API and exec SoundHandler.py with correct args**
+- **Added config.json to add raspberry pis Ips**
+- **Server Side Javascript API setup**
 - **Basic HTML Layout** using Bootstrap
 - **Client-Side Python Script for TTS**:
     - **arg 1**: Text for Text-to-Speech (str)
@@ -36,9 +40,10 @@
 
 ## Things To Do
 
-- Connect HTML JavaScript variables to the server
-- Create a server to communicate with `SoundHandler.py` and pass arguments
-- Create a client-server to run `SoundHandler.py` on Raspberry Pis and pass arguments
+- Test REST API Calls
+- Test Flask Client Side Server
+- Add Mode 2 and Mode 3 Page on website
+- Add Settings / Testing Page to Site
 
 
 ## Required Libs
@@ -50,3 +55,8 @@
 - edge_tts
 - asyncio
 - googletrans
+- python 3.10+
+
+### Server Side
+
+- nginx

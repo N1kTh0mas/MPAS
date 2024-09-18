@@ -17,7 +17,7 @@ def play_audio():
 
     # Prepare the arguments for the Python script
     script_args = [
-        'python3', 'your_audio_script.py',
+        'python3', 'SoundHandler.py',
         message,
         str(spanish),  # Convert to string to pass as argument
         str(speaker_ids),  # List of speaker IDs
