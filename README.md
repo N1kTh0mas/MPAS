@@ -19,7 +19,10 @@
     ### Example:
 
     ```bash
-    python SoundHandler.py "Hello World" 1 [100, 101, 105, 107]
+    python SoundHandler.py "Hello World" 1 [100, 101, 105, 107] 1
+    ```
+    ```bash
+    python SoundHandler.py "This is an alarm" 0 [100, 101, 200] 2 alarm4 5
     ```
 
     This will play "Hello World" in both English and Spanish over speakers 100, 101, 105, and 107.
