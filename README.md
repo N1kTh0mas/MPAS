@@ -43,7 +43,7 @@
 
 ## Required Libs
 
-# Client Side
+### Client Side
 
 - flask
 - pygame
