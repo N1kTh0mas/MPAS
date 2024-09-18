@@ -21,11 +21,18 @@
     ```bash
     python SoundHandler.py "Hello World" 1 [100, 101, 105, 107] 1
     ```
+    This will play "Hello World" in both English and Spanish over speakers 100, 101, 105, and 107.
+
     ```bash
     python SoundHandler.py "This is an alarm" 0 [100, 101, 200] 2 alarm4 5
     ```
+    This will play "This is an alarm" in just English over speakers. Alarm 4 will be played twice before and played twice after message. Total message with alarms will be played 5 times.
 
-    This will play "Hello World" in both English and Spanish over speakers 100, 101, 105, and 107.
+    ```bash
+    python SoundHandler.py null null null 3 alarm6 2
+    ```
+    This will played Alarm 6 twice.
+    
 
 ## Things To Do
 
