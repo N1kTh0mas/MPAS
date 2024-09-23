@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html data-bs-theme="light" lang="en" data-bss-forced-theme="light">
+<html data-bs-theme="light" lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -13,26 +13,25 @@
         <div class="container-fluid"><a class="navbar-brand" href="">Microscreen Public Announcement System</a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link active" href="/index.html">Text To Announce</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/mode2.html">Alarm with Text</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/index.html">Text To Announce</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="/mode2.html">Alarm with Text</a></li>
                     <li class="nav-item"><a class="nav-link" href="/settings.html">Settings</a></li>
                 </ul>
             </div>
         </div>
     </nav>
-    <div></div>
     <div class="container">
         <div class="text-center p-4 p-lg-5">
-            <p class="fw-bold text-primary mb-2">Text to Announce</p>
-            <div style="margin: 10px;"><textarea id="TTS" class="form-control" rows="3" name="TTS" placeholder="Type Message Here"></textarea></div>
+            <p class="fw-bold text-primary mb-2">Alarm with Text to Announce</p>
+            <div style="margin: 10px;"><textarea id="TTS2" class="form-control" rows="3" name="TTS" placeholder="Type Message Here"></textarea></div>
+            <div></div>
             <div class="table-responsive" style="border-style: none;backdrop-filter: opacity(0);-webkit-backdrop-filter: opacity(0);height: 400px;">
                 <table class="table table-borderless">
                     <tbody>
-                        <tr></tr>
                         <tr>
                             <td style="vertical-align: middle">
                                 <div style="max-width: fit-content;margin-right: auto;margin-left: auto;">
-                                    <p class="fw-bold text-secondary mb-2">Spanish Translation?&nbsp;</p><input type="checkbox" id="Spanish_Opt">
+                                    <p class="fw-bold text-secondary mb-2">Spanish Translation?&nbsp;</p><input type="checkbox" id="Spanish_Opt2">
                                 </div>
                             </td>
                             <td style="vertical-align: middle">
@@ -40,10 +39,18 @@
                                     <div class="dropdown show"><button class="btn btn-secondary dropdown-toggle me-2 py-2 px-4" aria-expanded="false" data-bs-toggle="dropdown" type="button" style="width: 178px;height: 48px;margin-top: 10px;">Speaker Group</button>
                                         <div class="dropdown-menu"><a class="dropdown-item" href="#" data-value="All">All</a><a class="dropdown-item" href="#" data-value="Microscreen">Microscreen</a><a class="dropdown-item" href="#" data-value="Syscon">Syscon</a><a class="dropdown-item" href="#" data-value="MS Stretch">MS Stretch</a><a class="dropdown-item" href="#" data-value="MS Yellow">MS Yellow</a><a class="dropdown-item" href="#" data-value="MS Stencil">MS Stencil</a><a class="dropdown-item" href="#" data-value="Front Office">Front Office</a><a class="dropdown-item" href="#" data-value="SYS Sensors">SYS Sensors</a><a class="dropdown-item" href="#" data-value="SYS Plantstar">SYS Plantstar</a></div>
                                     </div>
-                                    <p id="currentgroup" class="fw-bold text-secondary mb-2" style="margin: 10px;">No current selected group</p>
+                                    <p id="currentgroup2" class="fw-bold text-secondary mb-2" style="margin: 10px;">No current selected group</p>
                                 </div>
                             </td>
-                            <td style="vertical-align: middle"><button class="btn btn-primary fs-5 me-2 py-2 px-4" id="sendBtn" type="button" style="width: 178px;height: 48px;">Send Message</button></td>
+                            <td>
+                                <div>
+                                    <div class="dropdown show"><button class="btn dropdown-toggle me-2 py-2 px-4 btn-danger" aria-expanded="false" data-bs-toggle="dropdown" type="button" style="width: 178px;height: 48px;margin-top: 10px;">Alarm</button>
+                                        <div class="dropdown-menu"><a class="dropdown-item" href="#" data-value="alarm1">alarm1</a><a class="dropdown-item" href="#" data-value="alarm2">alarm2</a><a class="dropdown-item" href="#" data-value="alarm3">alarm3</a><a class="dropdown-item" href="#" data-value="alarm4">alarm4</a><a class="dropdown-item" href="#" data-value="alarm5">alarm5</a><a class="dropdown-item" href="#" data-value="alarm6">alarm6</a></div>
+                                    </div>
+                                    <p id="currentalarm" class="fw-bold text-secondary mb-2" style="margin: 10px;">No current selected alarm</p>
+                                </div>
+                            </td>
+                            <td style="vertical-align: middle"><button class="btn btn-primary fs-5 me-2 py-2 px-4" id="sendBtn2" type="button" style="width: 178px;height: 48px;">Send Message</button></td>
                         </tr>
                     </tbody>
                 </table>
